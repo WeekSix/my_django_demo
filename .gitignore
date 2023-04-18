@@ -1,2 +1,4 @@
-./Pipfile
-./Pipfile.lock
+Pipfile
+Pipfile.lock
+.idea/
+src/db*
