@@ -1,7 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<button class="favorite styled" type="button">{{ button_text }}</button>
+    <button class="favorite styled" type="button">{{ button_text }}</button>
+    <h2>{{ user }}</h2>
+    {% if user.is_authenticated %}
+        <p> User Only Data </p>
+        {% for num in my_list %}
+            <li>{{ num }} </li>
+        {% endfor %}
+    {% endif %}
+
+
+
+
 {% endblock %}
 
 

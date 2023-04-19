@@ -1,4 +1,4 @@
 Pipfile
 Pipfile.lock
 .idea/
-src/db*
+./src/zoey_django/__pycache__/

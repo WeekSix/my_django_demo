@@ -6,7 +6,8 @@ from django.template.loader import get_template
 # one web view is one function in this views.py file
 def home_page(request):
     my_title = "My Home Page"
-    return render(request, "home_page.html", {"h1":my_title, "title":"HOME", "button_text":"Home Button"})
+    context = {"h1":my_title, "title":"HOME", "button_text":"Home Button", "my_list":[1,2,3,4,5]}
+    return render(request, "home_page.html", context)
 
 def about_page(request):
     return render(request, "about_page.html", {"h1":"About us", "title":"ABOUT"})
