@@ -8,10 +8,10 @@ from .models import Comment
 
 
 def blog_post_detail_page(request):
-    article = BlogPost.objects.get(id=1)  # query -> database -> data -> django render it
+    blog_post = BlogPost.objects.get(title="django 101")  # query -> database -> data -> django render it
     comments = []
-    for _ in range(1,3):
+    for _ in range(1, 3):
         comments.append(Comment.objects.get(id=_))
     template_name = 'blog_post_detail.html'
-    context = {"object": article, "comments_list": comments}
+    context = {"article": blog_post, "comments_list": comments}
     return render(request, template_name, context)

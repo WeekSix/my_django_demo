@@ -22,9 +22,9 @@ from .views import (
     contact_page,
     example,
 )
-from blog.views import (
-    blog_post_detail_page,
-)
+
+from blog.views import blog_post_detail_page
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_page),

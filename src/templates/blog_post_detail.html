@@ -2,8 +2,8 @@
 
 
 {% block content %}
-    <h1> {{ object.title }}</h1>
-    <p>{{ object.content }}</p>
+    <h1> {{ article.title }}</h1>
+    <p>{{ article.content }}</p>
 
     {%  for item in comments_list %}
         <li> {{ item.comment }}  </li>
