@@ -23,7 +23,7 @@ from .views import (
     example,
 )
 
-from blog.views import blog_post_detail_page
+from project.views import project_post_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,5 +31,5 @@ urlpatterns = [
     path('about/',about_page),
     path('contact/', contact_page),
     path('example/', example),
-    path('blog/', blog_post_detail_page),
+    path('project/<int:post_id>/', project_post_page),
 ]

@@ -38,7 +38,7 @@ INSTALLED_APPS = [# components/widget
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # my apps
-    'blog',
+    'project',
 ]
 
 MIDDLEWARE = [

@@ -2,11 +2,6 @@
 
 
 {% block content %}
-    <h1> {{ article.title }}</h1>
-    <p>{{ article.content }}</p>
-
-    {%  for item in comments_list %}
-        <li> {{ item.comment }}  </li>
-    {% endfor %}
-
+    <h1> {{ project.title }}</h1>
+    <p>{{ project.description }}</p>
 {% endblock %}
